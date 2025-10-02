@@ -7,6 +7,14 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    public function home () {
+        return view('home.index');
+    }
+
+    public function about () {
+        return view('about.index');
+    }
+
     public function index () {
         $posts = Post::all();
 
@@ -36,6 +44,10 @@ class PostController extends Controller
         Post::create($request->all());
 
         return redirect()->route('posts.index')->with('success', 'Post created successfully');
+    }
+
+    public function contact () {
+        return view ('contact.index');
     }
 
     // public function edit ($id) {

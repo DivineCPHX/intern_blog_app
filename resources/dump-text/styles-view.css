@@ -1,29 +1,9 @@
-        {{-- <h1>All Posts</h1>
-
-<div class="post_container">
-    @foreach ( $posts as $post )
-        <div class="card mb-3">
-            <div class="card-body">
-                <h3 class="card-title">{{ $post['title'] }}</h3>
-                <p class="card-text">{{ $post['content'] }}</p>
-                <small class="text-muted">Post ID: {{ $post['id'] }}</small>
-            </div>
-        </div>
-
-        @if (empty($posts))
-                <p>No posts available.</p>
-        @endif
-
-    @endforeach
-</div> --}}
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlogSphere | View All Posts</title>
+    <title>BlogSphere | Home</title>
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
     <script src="{{url('/styles/tailwind.js')}}"></script>
     <link href="{{ url('/styles/unpkg.css') }}" rel="stylesheet">
@@ -49,15 +29,15 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <a href="/" class="flex items-center">
+                    <a href="index.html" class="flex items-center">
                         <i data-feather="edit-3" class="text-indigo-600"></i>
                         <span class="ml-2 text-xl font-bold text-indigo-600">BlogSphere</span>
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="/" class="text-gray-600 hover:text-indigo-600 transition-smooth">Home</a>
+                    <a href="/" class="text-indigo-600 font-medium">Home</a>
                     <a href="/about" class="text-gray-600 hover:text-indigo-600 transition-smooth">About</a>
-                    <a href="/posts" class="text-indigo-600 font-medium">View all posts</a>
+                    <a href="/posts" class="text-gray-600 hover:text-indigo-600 transition-smooth">View all posts</a>
                     <a href="/posts/create" class="text-gray-600 hover:text-indigo-600 transition-smooth">Create Post</a>
                     <a href="/contact" class="text-gray-600 hover:text-indigo-600 transition-smooth">Contact</a>
                 </div>
@@ -164,7 +144,7 @@
             </div>
 
             <div class="text-center mt-12">
-                <a href="/posts" class="inline-block border-2 border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-600 hover:text-white transition-smooth">
+                <a href="/posts/index" class="inline-block border-2 border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-600 hover:text-white transition-smooth">
                     View All Posts
                 </a>
             </div>
@@ -206,9 +186,9 @@
                     <ul class="space-y-2">
                         <li><a href="/" class="text-gray-400 hover:text-white transition-smooth">Home</a></li>
                         <li><a href="/about" class="text-gray-400 hover:text-white transition-smooth">About</a></li>
-                        <li><a href="/posts" class="text-gray-400 hover:text-white transition-smooth">View all posts</a></li>
+                        <li><a href="posts" class="text-gray-400 hover:text-white transition-smooth">View all posts</a></li>
                         <li><a href="/posts/create" class="text-gray-400 hover:text-white transition-smooth">Create Post</a></li>
-                        <li><a href="/contact" class="text-gray-400 hover:text-white transition-smooth">Contact</a></li>
+                        <li><a href="/contact/index" class="text-gray-400 hover:text-white transition-smooth">Contact</a></li>
                     </ul>
                 </div>
 
@@ -243,7 +223,7 @@
             </div>
 
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 BlogSphere. All rights reserved.</p>
+                <p>&copy; 2023 BlogSphere. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -265,3 +245,6 @@
     </script>
 </body>
 </html>
+
+
+Create a View All Posts page assuming the code above is the landing page
